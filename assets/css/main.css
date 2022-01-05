@@ -213,6 +213,7 @@ nav.show div.icon-close {
 #home {
   height: calc(100vh - var(--header-height)+2rem);
   background-image: url(/assets/images/banner.jpeg);
+  background-attachment: fixed;
   background-size: cover;
   background-position: center;
 }
@@ -273,6 +274,11 @@ nav.show div.icon-close {
   border-radius: 1rem 1rem 0 0;
   width: 100%;
   background-color: var(--base-color);
+  background-image: url(/assets/images/texture.jpeg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: bottom start;
+  background-repeat: no-repeat;
 }
 
 .about-content {
@@ -305,6 +311,67 @@ nav.show div.icon-close {
   max-width: 400px;
   width: 90%;
 }
+
+
+/******** cards *************/
+
+
+#services{
+    background-image: url(/assets/images/precisionagriculture.png);
+    background-size: cover;
+    background-position: bottom start;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+#services h2{
+    margin: 2rem 1rem;
+    height: 4rem;
+    border-left: 8px solid var(--base-color-second);
+    padding-left: 2rem;
+    font-size: 2.2rem;
+    display: flex;
+    align-items: center;
+}
+
+.cards {
+    width: 100%;
+    display: grid;
+    gap: 1rem;
+
+}
+
+.card-item{
+    width: 90%;
+    max-width: 300px;
+    height: 700px;
+    margin: 0 auto;
+    padding: 3rem .7rem;
+    background-color: var(--base-color);
+    display: grid;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    color: white;
+    border-radius: 0 20px 20px 20px;
+}
+
+.card-item-content{
+    display: grid;
+    gap: 2rem;
+}
+
+.card-item-content i{
+    font-size: 4rem;
+    color: white;
+}
+
+.card-item-content ul{
+    display: grid;
+    gap: 1rem;
+    list-style-type: disc;
+}
+
 
 @media (min-width: 1100px) {
   .button {
@@ -392,5 +459,20 @@ nav.show div.icon-close {
     border-left: none;
     padding-left: 0;
   }
+
+  /*********** cards **********/
+
+  .cards {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.card-item{
+    padding: 1.5rem 3rem;
+}
 
 }

@@ -17,3 +17,18 @@ for(const link of links){
     nav.classList.remove('show');
     })
 };
+
+
+const header = document.querySelector('#header');
+const navHeight = header.offsetHeight;
+function changeHeaderShadowOnScroll() {
+
+    if (window.scrollY >= navHeight){
+        // scroll e maior q a altura do header
+        header.classList.add('scroll')
+    } else {
+        // scroll e menor q a altura do header
+        header.classList.remove('scroll')
+
+    }
+}
