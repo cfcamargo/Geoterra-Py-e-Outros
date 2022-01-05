@@ -372,6 +372,47 @@ nav.show div.icon-close {
     list-style-type: disc;
 }
 
+#precision{
+    background-color: #192a56;
+    padding: 2rem 0;
+    color: white;
+    
+}
+
+
+.precision-content{
+    display: grid;
+    gap: 2rem;
+}
+
+.precision-description{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    gap: 2.5rem;
+    max-width: 400px;
+}
+
+.precision-description h3{
+    font-size: 2rem;
+    border-left: 7px solid var(--base-color);
+    padding-left: 1.3rem;
+    font-weight: bold;
+}
+
+.precision-cover{
+    max-width: 400px;
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.precision-cover img{
+    margin: 0 auto;
+}
+
 
 @media (min-width: 1100px) {
   .button {
@@ -474,5 +515,16 @@ nav.show div.icon-close {
 .card-item{
     padding: 1.5rem 3rem;
 }
+
+
+.precision-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+
 
 }
