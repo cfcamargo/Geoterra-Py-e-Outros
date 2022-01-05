@@ -16,6 +16,9 @@
       rel="stylesheet"
     />
 
+    <!--IconMon-->
+    <link rel="stylesheet" href="./assets/icomoon/style.css">
+
     <link rel="stylesheet" href="./assets/fontawesome/css/all.css" />
 
     <link rel="stylesheet" href="./assets/css/main.css" />
@@ -23,27 +26,25 @@
     <title>Geoterra Agricultura de Precisión</title>
   </head>
   <body>
-    <header>
-      <div class="container">
-        <div id="header">
-          <div class="logo">
-            <img src="./assets/images/geoterra-logo.png" alt="Logo Geoterra" />
-          </div>
+    <header id="header">
+        <nav class="container">
+          <a class="logo" href="#"><img src="./assets/images/geoterra-logo.png" alt="Logo"></a>
+          <!-- menu -->
           <div class="menu">
-            <nav>
-              <ul class="grid">
-                <li><a href="#Home">Home</a></li>
-                <li><a href="#Home">Sobre</a></li>
-                <li><a href="#Home">Serviços</a></li>
-                <li><a href="#Home">Contato</a></li>
-              </ul>
-            </nav>
+            <ul class="grid">
+              <li><a class="title" href="#home">Início</a></li>
+              <li><a class="title" href="#about">Sobre</a></li>
+              <li><a class="title" href="#services">Serviços</a></li>
+              <li><a class="title" href="#contact">Contato</a></li>
+            </ul>
           </div>
-          <div class="mobile">
-            <i class="fas fa-bars"></i>
-          </div>
-        </div>
-      </div>
-    </header>
+          <!-- /menu -->
+          <div class="toggle icon-menu"></div>
+          <div class="toggle icon-close"></div>
+        </nav>
+      </header>
+
+
+      <script src="./assets/js/main.js"></script>
   </body>
 </html>
