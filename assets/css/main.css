@@ -273,12 +273,13 @@ nav.show div.icon-close {
   margin-top: -2rem;
   border-radius: 1rem 1rem 0 0;
   width: 100%;
-  background-color: var(--base-color);
+  background-color: #40739E;
+  /* background-color: var(--base-color);
   background-image: url(/assets/images/texture.jpeg);
   background-attachment: fixed;
   background-size: cover;
   background-position: bottom start;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
 }
 
 .about-content {
@@ -349,6 +350,7 @@ nav.show div.icon-close {
     padding: 3rem .7rem;
     background-color: var(--base-color);
     display: grid;
+    grid-template-rows: 200px 600px 1fr;
     justify-content: center;
     align-items: flex-start;
     text-align: center;
@@ -369,12 +371,12 @@ nav.show div.icon-close {
 .card-item-content ul{
     display: grid;
     gap: 1rem;
-    list-style-type: disc;
+    
 }
 
 #precision{
     background-color: #192a56;
-    padding: 2rem 0;
+    padding: 8rem 0;
     color: white;
     
 }
@@ -412,6 +414,74 @@ nav.show div.icon-close {
 .precision-cover img{
     margin: 0 auto;
 }
+
+
+#savia .savia-header{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 3rem;
+
+}
+
+#savia .savia-header .savia-icons{
+
+  display: grid;
+  justify-content: flex-end;
+
+}
+
+#savia .savia-header .savia-icons img{
+  width: 120px;
+}
+
+
+
+.savia-content{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  grid-template-rows: 700px;
+  
+}
+
+
+.savia-content .content-description{
+  display: grid;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.savia-content .content-description .desctiption-text{
+
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+}
+
+.savia-content .content-description .desctiption-text ul{
+  display: grid;
+  gap: 1rem;
+}
+
+
+.savia-content .content-cover{
+  background-image: url(/assets/images/maleta.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.savia-content .content-cover:nth-child(1){
+  background-image: url(/assets/images/maleta2.png);
+  background-position: center;
+  background-size: cover;
+}
+
+
 
 
 @media (min-width: 1100px) {
