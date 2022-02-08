@@ -234,33 +234,52 @@ nav.show div.icon-close {
 }
 
 .home-content {
+  padding: 2rem 1rem;
   height: 100%;
-  width: 100%;
+  display: grid;
+  text-align: center;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+
+}
+
+.home-content-description{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  text-align: center;
+  align-items: flex-start;
   color: white;
   gap: 3rem;
+  height: 100%;
+
 }
+
+.home-content-cover{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 
 .home-content h1 {
   font-size: 3rem;
+  margin: 0 auto;
 }
 
 .home-content p {
   font-size: 1rem;
   width: 90%;
+  margin: 0 auto;
 }
 
-.home-content button {
+.home-content .home-content-description button {
   width: 120px;
   height: 40px;
   background-color: var(--base-color);
   color: white;
   border: none;
   border-radius: 5px;
+  margin: 0 auto;
 }
 
 .home-content button:hover {
@@ -522,10 +541,23 @@ nav.show div.icon-close {
   }
 
   .home-content {
-    max-width: 400px;
+    
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    grid-template-rows: 100%;
+    text-align: left;
+    
+  }
+
+  .home-content p,
+  .home-content h1{
     margin: 0;
-    align-items: flex-start;
-    text-align: start;
+  }
+
+
+  .home-content .home-content-description button {
+   
+    margin: 0;
   }
 
   /********* about ********/
