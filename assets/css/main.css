@@ -417,25 +417,26 @@ nav.show div.icon-close {
 
 
 #savia .savia-header{
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  align-items: center;
-  justify-content: flex-start;
+  font-size: 2rem;
+  margin-top: 3rem;
   margin-bottom: 3rem;
+  text-align: center;
 
 }
 
-#savia .savia-header .savia-icons{
 
-  display: grid;
-  justify-content: flex-end;
-
-}
-
-#savia .savia-header .savia-icons img{
+#savia .savia-header img{
   width: 120px;
 }
 
+.savia-content .content-cover {
+  display: grid;
+  align-items: center;
+}
+
+.savia-content .content-cover img{
+  width: 80%;
+}
 
 
 .savia-content{
@@ -459,6 +460,7 @@ nav.show div.icon-close {
 
   display: flex;
   flex-direction: column;
+  
   gap: 2rem;
 
 }
@@ -469,17 +471,7 @@ nav.show div.icon-close {
 }
 
 
-.savia-content .content-cover{
-  background-image: url(/assets/images/maleta.png);
-  background-position: center;
-  background-size: cover;
-}
 
-.savia-content .content-cover:nth-child(1){
-  background-image: url(/assets/images/maleta2.png);
-  background-position: center;
-  background-size: cover;
-}
 
 
 
