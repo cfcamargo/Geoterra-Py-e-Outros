@@ -19,7 +19,7 @@ img {
 
 /*====  VARIABLES ============================ */
 :root {
-  --header-height: 4.5rem;
+  --header-height: 6rem;
 
   /* colors */
   --hue: 159;
@@ -75,8 +75,9 @@ body {
 
 #header {
   border-bottom: 1px solid #e4e4e4;
-  margin-bottom: 2rem;
+  
   display: flex;
+  height: var(--header-height);
 
   position: fixed;
   top: 0;
@@ -98,10 +99,13 @@ main {
 .logo {
   font: 700 1.31rem 'Poppins', sans-serif;
   color: var(--title-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .logo img {
-  width: 60px;
+  width: 85px;
 }
 
 /*====  NAVIGATION ============================ */
@@ -211,8 +215,8 @@ nav.show div.icon-close {
 /******** main ******/
 
 #home {
-  height: calc(100vh - var(--header-height)+2rem);
-  background-image: url(/assets/images/banner.jpeg);
+  height: calc(100vh - var(--header-height));
+  background-image: url(/assets/images/calagem-banner.jpeg);
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
@@ -239,7 +243,7 @@ nav.show div.icon-close {
   display: grid;
   text-align: center;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr;
+ 
 
 }
 
@@ -255,14 +259,14 @@ nav.show div.icon-close {
 }
 
 .home-content-cover{
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
 }
 
 
 .home-content h1 {
-  font-size: 3rem;
+  font-size: 2.8rem;
   margin: 0 auto;
 }
 
@@ -273,8 +277,9 @@ nav.show div.icon-close {
 }
 
 .home-content .home-content-description button {
-  width: 120px;
+  width: 130px;
   height: 40px;
+  font-size: .9rem;
   background-color: var(--base-color);
   color: white;
   border: none;
@@ -292,13 +297,8 @@ nav.show div.icon-close {
   margin-top: -2rem;
   border-radius: 1rem 1rem 0 0;
   width: 100%;
-  background-color: #40739E;
-  /* background-color: var(--base-color);
-  background-image: url(/assets/images/texture.jpeg);
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: bottom start;
-  background-repeat: no-repeat; */
+  padding-top: 8rem;
+  
 }
 
 .about-content {
@@ -342,12 +342,18 @@ nav.show div.icon-close {
     background-position: bottom start;
     background-attachment: fixed;
     background-repeat: no-repeat;
+    color: var(--base-color);
+    
+}
+
+#services .opacity{
+  padding: 8rem 0;
 }
 
 #services h2{
     margin: 2rem 1rem;
     height: 4rem;
-    border-left: 8px solid var(--base-color-second);
+    border-left: 8px solid var(--base-color);
     padding-left: 2rem;
     font-size: 2.2rem;
     display: flex;
@@ -438,7 +444,7 @@ nav.show div.icon-close {
 #savia .savia-header{
   font-size: 2rem;
   margin-top: 3rem;
-  margin-bottom: 3rem;
+  margin-bottom: 5rem;
   text-align: center;
 
 }
@@ -448,22 +454,25 @@ nav.show div.icon-close {
   width: 120px;
 }
 
-.savia-content .content-cover {
-  display: grid;
+.savia-content .content-cover{
   align-items: center;
+  background-image: url(../images/maleta.png);
+  background-position: bottom;
+  height: 600px;
+  background-size: cover;
 }
 
-.savia-content .content-cover img{
-  width: 80%;
+.savia-content .content-cover:nth-child(2){
+  
+  background-image: url(../images/maleta2.png);
+  
 }
+
 
 
 .savia-content{
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem;
-  grid-template-rows: 700px;
-  
+  grid-template-rows: 1fr 1fr;
 }
 
 
@@ -505,6 +514,23 @@ nav.show div.icon-close {
     max-width: 1120px;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .home-content h1 {
+    font-size: 4rem;
+   
+  }
+  
+  .home-content p {
+    font-size: 1.2rem;
+    
+  }
+  
+  .home-content .home-content-description button {
+    width: 180px;
+    height: 50px;
+    font-size: 1.1rem;
+    
   }
 
   .section header,
@@ -618,6 +644,34 @@ nav.show div.icon-close {
     align-items: center;
     gap: 1rem;
 }
+
+
+.savia-content{
+ 
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "description bg"
+                        "bg2 description2";
+}
+
+
+.savia-content .content-description{
+  grid-area: description;
+}
+
+.savia-content .content-cover{
+  grid-area: bg;
+}
+
+.savia-content .content-description:nth-child(1){
+  grid-area: description2;
+}
+
+.savia-content .content-cover:nth-child(2){
+  grid-area: bg2;
+}
+
+
 
 
 
