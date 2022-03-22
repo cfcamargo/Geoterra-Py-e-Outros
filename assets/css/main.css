@@ -75,7 +75,7 @@ body {
 
 #header {
   border-bottom: 1px solid #e4e4e4;
-  
+
   display: flex;
   height: var(--header-height);
 
@@ -243,11 +243,9 @@ nav.show div.icon-close {
   display: grid;
   text-align: center;
   grid-template-columns: 1fr;
- 
-
 }
 
-.home-content-description{
+.home-content-description {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -255,15 +253,13 @@ nav.show div.icon-close {
   color: white;
   gap: 3rem;
   height: 100%;
-
 }
 
-.home-content-cover{
+.home-content-cover {
   display: none;
   justify-content: center;
   align-items: center;
 }
-
 
 .home-content h1 {
   font-size: 2.8rem;
@@ -279,7 +275,7 @@ nav.show div.icon-close {
 .home-content .home-content-description button {
   width: 130px;
   height: 40px;
-  font-size: .9rem;
+  font-size: 0.9rem;
   background-color: var(--base-color);
   color: white;
   border: none;
@@ -298,7 +294,6 @@ nav.show div.icon-close {
   border-radius: 1rem 1rem 0 0;
   width: 100%;
   padding-top: 8rem;
-  
 }
 
 .about-content {
@@ -332,151 +327,147 @@ nav.show div.icon-close {
   width: 90%;
 }
 
-
 /******** cards *************/
 
-
-#services{
-    background-image: url(/assets/images/precisionagriculture.png);
-    background-size: cover;
-    background-position: bottom start;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    color: var(--base-color);
-    
+#services {
+  background-image: url(/assets/images/precisionagriculture.png);
+  background-size: cover;
+  background-position: bottom start;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  color: var(--base-color);
 }
 
-#services .opacity{
+#services .opacity {
   padding: 8rem 0;
 }
 
-#services h2{
-    margin: 2rem 1rem;
-    height: 4rem;
-    border-left: 8px solid var(--base-color);
-    padding-left: 2rem;
-    font-size: 2.2rem;
-    display: flex;
-    align-items: center;
+#services h2 {
+  margin: 2rem 1rem;
+  height: 4rem;
+  border-left: 8px solid var(--base-color);
+  padding-left: 2rem;
+  font-size: 2.2rem;
+  display: flex;
+  align-items: center;
 }
 
 .cards {
-    width: 100%;
-    display: grid;
-    gap: 1rem;
-
+  width: 100%;
+  display: grid;
+  gap: 1rem;
 }
 
-.card-item{
-    width: 90%;
-    max-width: 300px;
-    height: 700px;
-    margin: 0 auto;
-    padding: 3rem .7rem;
-    background-color: var(--base-color);
-    display: grid;
-    grid-template-rows: 200px 600px 1fr;
-    justify-content: center;
-    align-items: flex-start;
-    text-align: center;
-    color: white;
-    border-radius: 0 20px 20px 20px;
+.card-item {
+  width: 90%;
+  max-width: 300px;
+  height: 700px;
+  margin: 0 auto;
+  padding: 3rem 0.7rem;
+  background-color: var(--base-color);
+  display: grid;
+  grid-template-rows: 200px 600px 1fr;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: center;
+  color: white;
+  border-radius: 0 20px 20px 20px;
 }
 
-.card-item-content{
-    display: grid;
-    gap: 2rem;
+.card-item-content {
+  display: grid;
+  gap: 2rem;
 }
 
-.card-item-content i{
-    font-size: 4rem;
-    color: white;
+.card-item-content i {
+  font-size: 4rem;
+  color: white;
 }
 
-.card-item-content ul{
-    display: grid;
-    gap: 1rem;
-    
+.card-item-content ul {
+  display: grid;
+  gap: 1rem;
 }
 
-#precision{
-    background-color: #192a56;
-    padding: 8rem 0;
-    color: white;
-    
+#precision {
+  background-color: #192a56;
+  padding: 8rem 0;
+  color: white;
 }
 
-
-.precision-content{
-    display: grid;
-    gap: 2rem;
+.precision-content {
+  display: grid;
+  gap: 2rem;
 }
 
-.precision-description{
-    display: grid;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-    gap: 2.5rem;
-    max-width: 400px;
+.precision-description {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  gap: 2.5rem;
+  max-width: 400px;
 }
 
-.precision-description h3{
-    font-size: 2rem;
-    border-left: 7px solid var(--base-color);
-    padding-left: 1.3rem;
-    font-weight: bold;
+.precision-description h3 {
+  font-size: 2rem;
+  border-left: 7px solid var(--base-color);
+  padding-left: 1.3rem;
+  font-weight: bold;
 }
 
-.precision-cover{
-    max-width: 400px;
-    width: 100%;
-    display: grid;
-    justify-content: center;
-    align-items: center;
+.precision-cover {
+  max-width: 400px;
+  width: 100%;
+  display: grid;
+  justify-content: center;
+  align-items: center;
 }
 
-.precision-cover img{
-    margin: 0 auto;
+.precision-cover img {
+  margin: 0 auto;
 }
 
-
-#savia .savia-header{
+#savia .savia-header {
   font-size: 2rem;
   margin-top: 3rem;
   margin-bottom: 5rem;
   text-align: center;
-
 }
 
-
-#savia .savia-header img{
+#savia .savia-header img {
   width: 120px;
 }
 
-.savia-content .content-cover{
+.savia-content .content-cover {
   align-items: center;
-  background-image: url(../images/maleta.png);
+  background-image: url(../images/maleta2.png);
   background-position: bottom;
   height: 600px;
   background-size: cover;
 }
 
-.savia-content .content-cover:nth-child(2){
+.savia-content .content-cover:nth-child(2) {
+  background-image: url(../images/soja.png);
   
-  background-image: url(../images/maleta2.png);
   
+}
+
+.savia-content .content-cover:nth-child(4) {
+  background-image: url(../images/maleta.png);
+
+
 }
 
 
 
-.savia-content{
+
+.savia-content {
   display: grid;
   grid-template-rows: 1fr 1fr;
 }
 
-
-.savia-content .content-description{
+.savia-content .content-description {
   display: grid;
   gap: 1rem;
   justify-content: center;
@@ -484,25 +475,17 @@ nav.show div.icon-close {
   padding: 2rem;
 }
 
-.savia-content .content-description .desctiption-text{
-
+.savia-content .content-description .desctiption-text {
   display: flex;
   flex-direction: column;
-  
-  gap: 2rem;
 
+  gap: 2rem;
 }
 
-.savia-content .content-description .desctiption-text ul{
+.savia-content .content-description .desctiption-text ul {
   display: grid;
   gap: 1rem;
 }
-
-
-
-
-
-
 
 @media (min-width: 1100px) {
   .button {
@@ -518,19 +501,16 @@ nav.show div.icon-close {
 
   .home-content h1 {
     font-size: 4rem;
-   
   }
-  
+
   .home-content p {
     font-size: 1.2rem;
-    
   }
-  
+
   .home-content .home-content-description button {
     width: 180px;
     height: 50px;
     font-size: 1.1rem;
-    
   }
 
   .section header,
@@ -567,22 +547,18 @@ nav.show div.icon-close {
   }
 
   .home-content {
-    
     grid-template-columns: 1fr 1fr;
     align-items: center;
     grid-template-rows: 100%;
     text-align: left;
-    
   }
 
   .home-content p,
-  .home-content h1{
+  .home-content h1 {
     margin: 0;
   }
 
-
   .home-content .home-content-description button {
-   
     margin: 0;
   }
 
@@ -597,7 +573,6 @@ nav.show div.icon-close {
     justify-content: flex-start;
     align-items: center;
     gap: 0;
-    
   }
 
   .about-content .about-description h3 {
@@ -630,49 +605,84 @@ nav.show div.icon-close {
     justify-content: center;
     align-items: center;
     gap: 2rem;
-}
+  }
 
-.card-item{
+  .card-item {
     padding: 1.5rem 3rem;
-}
+  }
 
-
-.precision-content{
+  .precision-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: center;
     align-items: center;
     gap: 1rem;
-}
+  }
 
+  .savia-content {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+      'bg2 description2'
+      'description bg'
+      'bg3 description3';
+  }
 
-.savia-content{
- 
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-template-areas: "description bg"
-                        "bg2 description2";
-}
+  .savia-content .content-description {
+    grid-area: description;
+  }
 
+  .savia-content .content-cover {
+    grid-area: bg;
+  }
 
-.savia-content .content-description{
-  grid-area: description;
-}
+  .savia-content .content-description:nth-child(1) {
+    grid-area: description2;
+  }
 
-.savia-content .content-cover{
-  grid-area: bg;
-}
+  .savia-content .content-cover:nth-child(2) {
+    grid-area: bg2;
+  }
 
-.savia-content .content-description:nth-child(1){
-  grid-area: description2;
-}
+  .savia-content .content-description:nth-child(3) {
+    grid-area: description3;
+  }
 
-.savia-content .content-cover:nth-child(2){
-  grid-area: bg2;
-}
+  .savia-content .content-cover:nth-child(4) {
+    grid-area: bg3;
+  }
 
+  .savia-resume {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 8rem;
 
+    padding: 3rem;
+  }
 
+  .savia-resume .cover {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
+  .savia-resume .cover img {
+    width: 80%;
+  }
 
+  .savia-resume .description {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .vantagensTitle {
+    margin: 0 auto;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 6rem;
+  }
 }
