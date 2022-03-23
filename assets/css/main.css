@@ -45,6 +45,7 @@ body {
   color: var(--text-color);
   background: var(--body-color);
   -webkit-font-smoothing: antialiased;
+  background-color: #f5f6fa;
 }
 
 .container {
@@ -78,6 +79,7 @@ body {
 
   display: flex;
   height: var(--header-height);
+  background-color: white;
 
   position: fixed;
   top: 0;
@@ -293,7 +295,7 @@ nav.show div.icon-close {
   margin-top: -2rem;
   border-radius: 1rem 1rem 0 0;
   width: 100%;
-  padding-top: 8rem;
+  padding: 15rem 2rem;
 }
 
 .about-content {
@@ -323,8 +325,7 @@ nav.show div.icon-close {
 }
 
 .about-content .about-cover img {
-  max-width: 400px;
-  width: 90%;
+  max-width: 500px;
 }
 
 /******** cards *************/
@@ -391,7 +392,7 @@ nav.show div.icon-close {
 
 #precision {
   background-color: #192a56;
-  padding: 8rem 0;
+  padding: 8rem 0 12rem 0;
   color: white;
 }
 
@@ -428,64 +429,106 @@ nav.show div.icon-close {
   margin: 0 auto;
 }
 
-#savia .savia-header {
-  font-size: 2rem;
-  margin-top: 3rem;
-  margin-bottom: 5rem;
-  text-align: center;
+
+#savia{
+  margin-top: -10rem;
 }
 
-#savia .savia-header img {
-  width: 120px;
+#savia h3{
+  font-size:2rem;
 }
 
-.savia-content .content-cover {
-  align-items: center;
-  background-image: url(../images/maleta2.png);
-  background-position: bottom;
-  height: 600px;
-  background-size: cover;
-}
-
-.savia-content .content-cover:nth-child(2) {
-  background-image: url(../images/soja.png);
-  
-  
-}
-
-.savia-content .content-cover:nth-child(4) {
-  background-image: url(../images/maleta.png);
-
-
-}
-
-
-
-
-.savia-content {
+.savia-wrapper {
+  background-color: white;
   display: grid;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 500px auto;
+  grid-template-columns: 1fr;
+
+  -webkit-box-shadow: 0px 0px 17px -3px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 17px -3px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 17px -3px rgba(0, 0, 0, 0.75);
 }
 
-.savia-content .content-description {
-  display: grid;
-  gap: 1rem;
-  justify-content: center;
-  align-items: center;
-  padding: 2rem;
+.savia-cover{
+    background-image: url(../images/maleta2.png);
+    background-size: cover;
+    background-position: bottom center;
 }
 
-.savia-content .content-description .desctiption-text {
+
+
+.savia-wrapper .savia-content{
   display: flex;
   flex-direction: column;
-
   gap: 2rem;
+  padding: 2rem 2rem;
+  align-items: center;
+  
 }
 
-.savia-content .content-description .desctiption-text ul {
-  display: grid;
-  gap: 1rem;
+.savia-wrapper .savia-content a{
+  padding: 1rem 2rem;
+  background-color: #40739e;
+  color: white;
+  
 }
+
+.savia-wrapper .savia-content h3{
+  text-align: center;
+  font-size: 1.1rem
+}
+
+.savia-wrapper .savia-content p{
+  text-align: center;
+  font-size: 1.1rem
+}
+
+.savia-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem 2rem;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.savia-cards .card{
+  padding: 2rem 1rem;
+  /*background-color: #192a56;*/
+  border: 2px solid #f5f6fa;
+  width: 80%;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+ 
+  text-align:center;
+  
+  gap: 2rem;
+  color: #40739e;
+  font-size: 1rem;
+  
+  height:220px;
+}
+
+.savia-cards .card:hover{
+  background-color: #f5f6fa;
+  transform: scale(1.1);
+  transition: all .2s
+}
+
+
+.savia-cards .card i{
+
+  font-size: 3rem;
+
+}
+
+.savia-cards .card p{
+
+  color: #192a56;
+
+}
+
 
 @media (min-width: 1100px) {
   .button {
@@ -619,70 +662,21 @@ nav.show div.icon-close {
     gap: 1rem;
   }
 
-  .savia-content {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas:
-      'bg2 description2'
-      'description bg'
-      'bg3 description3';
-  }
 
-  .savia-content .content-description {
-    grid-area: description;
-  }
-
-  .savia-content .content-cover {
-    grid-area: bg;
-  }
-
-  .savia-content .content-description:nth-child(1) {
-    grid-area: description2;
-  }
-
-  .savia-content .content-cover:nth-child(2) {
-    grid-area: bg2;
-  }
-
-  .savia-content .content-description:nth-child(3) {
-    grid-area: description3;
-  }
-
-  .savia-content .content-cover:nth-child(4) {
-    grid-area: bg3;
-  }
-
-  .savia-resume {
+  .savia-wrapper {
+    background-color: white;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-    margin-bottom: 8rem;
-
-    padding: 3rem;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+  
+    -webkit-box-shadow: 0px 0px 17px -3px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 17px -3px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 17px -3px rgba(0, 0, 0, 0.75);
   }
 
-  .savia-resume .cover {
-    padding: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  .savia-cards {
+    flex-direction: row;
   }
 
-  .savia-resume .cover img {
-    width: 80%;
-  }
 
-  .savia-resume .description {
-    padding: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .vantagensTitle {
-    margin: 0 auto;
-    font-size: 2.5rem;
-    text-align: center;
-    margin-bottom: 6rem;
-  }
 }
