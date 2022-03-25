@@ -423,19 +423,19 @@ nav.show div.icon-close {
   display: grid;
   justify-content: center;
   align-items: center;
+  margin: 0 auto;
 }
 
 .precision-cover img {
   margin: 0 auto;
 }
 
-
-#savia{
+#savia {
   margin-top: -10rem;
 }
 
-#savia h3{
-  font-size:2rem;
+#savia h3 {
+  font-size: 2rem;
 }
 
 .savia-wrapper {
@@ -449,24 +449,20 @@ nav.show div.icon-close {
   box-shadow: 0px 0px 17px -3px rgba(0, 0, 0, 0.75);
 }
 
-.savia-cover{
-    background-image: url(../images/maleta2.png);
-    background-size: cover;
-    background-position: bottom center;
+.savia-cover {
+  background-image: url(../images/maleta2.png);
+  background-size: cover;
+  background-position: bottom center;
 }
 
-
-
-.savia-wrapper .savia-content{
+.savia-wrapper .savia-content {
   display: flex;
   flex-direction: column;
   gap: 2rem;
   padding: 2rem 3rem;
- 
-  
 }
 
-.savia-wrapper .savia-content a{
+.savia-wrapper .savia-content a {
   padding: 1rem 2rem;
   background-color: #40739e;
   color: white;
@@ -477,18 +473,16 @@ nav.show div.icon-close {
   align-items: center;
 
   margin: 0 auto;
-  
-
 }
 
-.savia-wrapper .savia-content h3{
+.savia-wrapper .savia-content h3 {
   text-align: center;
-  font-size: 1.1rem
+  font-size: 1.1rem;
 }
 
-.savia-wrapper .savia-content p{
+.savia-wrapper .savia-content p {
   text-align: center;
-  font-size: 1.1rem
+  font-size: 1.1rem;
 }
 
 .savia-cards {
@@ -498,47 +492,204 @@ nav.show div.icon-close {
   padding: 2rem 2rem;
   justify-content: center;
   align-items: center;
-  
 }
 
-.savia-cards .card{
+.savia-cards .card {
   padding: 2rem 1rem;
   /*background-color: #192a56;*/
   border: 2px solid #f5f6fa;
   width: 80%;
   display: grid;
   grid-template-rows: 1fr 1fr;
- 
-  text-align:center !important;
-  
+
+  text-align: center !important;
+
   gap: 2rem;
   color: #40739e;
   font-size: 1rem;
-  
-  height:220px;
+
+  height: 220px;
 }
 
-.savia-cards .card:hover{
+.savia-cards .card:hover {
   background-color: #f5f6fa;
   transform: scale(1.1);
-  transition: all .2s
+  transition: all 0.2s;
 }
 
-
-.savia-cards .card i{
-
+.savia-cards .card i {
   font-size: 3rem;
-
 }
 
-.savia-cards .card p{
-
+.savia-cards .card p {
   color: #192a56;
+}
 
+#eletronics .eletronics-header {
+  height: 520px;
+  background: url(../images/calcareo.png);
+  background-size: cover;
+  background-position: right;
+  background-attachment: fixed;
+}
+
+#eletronics .eletronics-header .opacity {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: var(--body-color);
+  font-size: 1.5rem;
+}
+
+#eletronics .eletronics-header .opacity .container h2 {
+  width: 90%;
+  max-width: 500px;
+  font-size: 2.5rem;
+}
+
+.eletronics-resume {
+  margin-top: 5rem;
+
+  display: grid;
+  gap: 4rem;
+
+  padding: 3rem 1rem;
+}
+
+.eletronic-item {
+  margin-top: 4rem;
+  display: grid;
+  gap: 2rem;
+  grid-template-rows: 400px 3fr;
+}
+
+.eletronic-item:nth-child(2) .cover {
+  background: url(../images/tx-variavel.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.eletronic-item:nth-child(3) .cover {
+  background: url(../images/orientation.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.eletronic-item:nth-child(4) .cover {
+  background: url(../images/cover-sbox.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.eletronic-item .content {
+  display: grid;
+  gap: 2rem;
+}
+
+.eletronic-item .content a {
+  width: 140px;
+  height: 50px;
+  font-size: 1rem;
+  color: white;
+  font-weight: bold;
+  background-color: #40739e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all .2s;
 }
 
 
-@media (min-width: 1100px) {
+.eletronic-item .content a:hover{
+
+  filter: brightness(.9);
+
+
+}
+
+.eletronic-item .content ul {
+  display: grid;
+  gap: 1rem;
+}
+
+@media (min-width: 900px) {
+  .savia-wrapper {
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1.5fr 2fr;
+    grid-template-rows: 1fr;
+
+    -webkit-box-shadow: 0px 0px 17px -3px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 17px -3px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 17px -3px rgba(0, 0, 0, 0.75);
+  }
+
+  .savia-wrapper .savia-content {
+    justify-content: left;
+    align-items: none;
+    padding: 4rem 3rem 4rem 5rem;
+  }
+
+  .savia-wrapper .savia-content h3 {
+    text-align: left;
+    margin: 0;
+  }
+
+  .savia-wrapper .savia-content > p {
+    text-align: left;
+  }
+
+  .savia-cards {
+    flex-direction: row;
+    margin: 0;
+    padding: 2rem 0;
+  }
+
+  .savia-cards .card {
+    text-align: center !important;
+  }
+
+  .savia-wrapper .savia-content a {
+    margin: 0;
+  }
+
+  #eletronics .eletronics-header {
+    background-position: center;
+  }
+
+  #eletronics .eletronics-header .opacity .container h2 {
+    font-size: 3.5rem;
+  }
+
+  .eletronics-resume {
+    grid-template-columns: 2fr 1fr;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    gap: 2rem;
+  }
+
+  .eletronics-resume p {
+    width: 80%;
+  }
+
+  .eletronic-item {
+    display: grid;
+    gap: 2rem;
+    grid-template-rows: 600px;
+    grid-template-columns: 1fr 2fr;
+
+    /* -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75); */
+  }
+
+  .eletronic-item .content {
+    padding: 2rem 4rem 2rem 2rem;
+  }
+}
+
+@media (min-width: 1150px) {
   .button {
     height: 3.125rem;
   }
@@ -669,54 +820,4 @@ nav.show div.icon-close {
     align-items: center;
     gap: 1rem;
   }
-
-
-  .savia-wrapper {
-    background-color: white;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: 1fr;
-  
-    -webkit-box-shadow: 0px 0px 17px -3px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 0px 0px 17px -3px rgba(0, 0, 0, 0.75);
-    box-shadow: 0px 0px 17px -3px rgba(0, 0, 0, 0.75);
-  }
-
-  .savia-wrapper .savia-content{
-    justify-content: left;
-    align-items: none;
-    padding: 4rem 3rem 4rem 5rem;
-  }
-
-  .savia-wrapper .savia-content h3{
-    text-align: left;
-    margin: 0;
-    
-  }
-  
-  .savia-wrapper .savia-content>p{
-    text-align: left;
-    
-  }
-
-  .savia-cards {
-    flex-direction: row;
-    margin: 0;
-    padding: 2rem 0;
-  }
-
-  .savia-cards .card{
-    text-align: center !important;
-  }
-
-
-  .savia-wrapper .savia-content a{
-    
-  
-    margin: 0;
-    
-  
-  }
-
-
 }
