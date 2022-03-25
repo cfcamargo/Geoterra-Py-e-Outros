@@ -74,6 +74,14 @@ body {
   color: var(--base-color);
 }
 
+.divisor{
+  width:300px;
+  height:5px;
+  margin: 7rem auto;
+  background-color: var(--base-color);
+  
+}
+
 #header {
   border-bottom: 1px solid #e4e4e4;
 
@@ -556,12 +564,16 @@ nav.show div.icon-close {
   padding: 3rem 1rem;
 }
 
-.eletronic-item {
+.eletronic-item,
+.station-item {
   margin-top: 4rem;
   display: grid;
   gap: 2rem;
   grid-template-rows: 400px 3fr;
+  
 }
+
+
 
 .eletronic-item:nth-child(2) .cover {
   background: url(../images/tx-variavel.png);
@@ -569,24 +581,26 @@ nav.show div.icon-close {
   background-position: center;
 }
 
-.eletronic-item:nth-child(3) .cover {
+.eletronic-item:nth-child(4) .cover {
   background: url(../images/orientation.png);
   background-size: cover;
   background-position: center;
 }
 
-.eletronic-item:nth-child(4) .cover {
+.eletronic-item:nth-child(6) .cover {
   background: url(../images/cover-sbox.png);
   background-size: cover;
   background-position: center;
 }
 
-.eletronic-item .content {
+.eletronic-item .content,
+.station-item .content {
   display: grid;
   gap: 2rem;
 }
 
-.eletronic-item .content a {
+.eletronic-item .content a,
+.station-item .content a {
   width: 140px;
   height: 50px;
   font-size: 1rem;
@@ -600,16 +614,64 @@ nav.show div.icon-close {
 }
 
 
-.eletronic-item .content a:hover{
+.eletronic-item .content a:hover,
+.station-item .content a:hover, a{
 
   filter: brightness(.9);
 
 
 }
 
-.eletronic-item .content ul {
+.eletronic-item .content ul,
+.station-item .content ul {
+  
   display: grid;
   gap: 1rem;
+}
+
+
+
+
+#tempo .tempo-header {
+  height: 520px;
+  background: url(../images/temp.png);
+  background-size: cover;
+  background-position: right;
+  background-attachment: fixed;
+}
+
+#tempo .tempo-header .opacity {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: var(--body-color);
+  font-size: 1.5rem;
+}
+
+#tempo .tempo-header .opacity .container h2 {
+  width: 90%;
+  max-width: 500px;
+  font-size: 2.5rem;
+}
+
+
+
+.station-item:nth-child(2) .cover {
+  background: url(../images/lorarain.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.station-item:nth-child(4) .cover {
+  background: url(../images/ecod3_2.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.station-item:nth-child(6) .cover {
+  background: url(../images/metosag.jpeg);
+  background-size: cover;
+  background-position: center;
 }
 
 @media (min-width: 900px) {
@@ -673,10 +735,11 @@ nav.show div.icon-close {
     width: 80%;
   }
 
-  .eletronic-item {
+  .eletronic-item,
+  .station-item {
     display: grid;
     gap: 2rem;
-    grid-template-rows: 600px;
+    grid-template-rows: auto;
     grid-template-columns: 1fr 2fr;
 
     /* -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
@@ -684,8 +747,16 @@ nav.show div.icon-close {
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75); */
   }
 
+  .eletronic-item .content,
   .eletronic-item .content {
+    
     padding: 2rem 4rem 2rem 2rem;
+  }
+
+  .metos-ag{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
   }
 }
 
