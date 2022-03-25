@@ -674,6 +674,175 @@ nav.show div.icon-close {
   background-position: center;
 }
 
+
+#form-contact{
+
+  width: 100%;
+  background: url(../images/form-bg.jpeg);
+  background-size: cover;
+  background-position:center;
+}
+
+
+#form-contact .container{
+  width: 100%;
+}
+
+#form-contact .content{
+  width: 100%;
+  display: grid;
+  gap: 2rem;
+  padding: 5rem 1rem;
+
+  background-color: rgba(0, 0  , 0, 0.4)
+
+}
+
+#form-contact .content .header{
+  color: white;
+  display: grid;
+  gap: 1rem;
+
+}
+
+
+#form-contact .content .header h3{
+  font-size: 2rem;
+}
+
+
+#form-contact .content form{
+  width: 100%;
+  color: white;
+  display: grid;
+  gap: 2rem;
+}
+
+#form-contact .content form input{
+
+  width: 100%;
+  height:50px;
+  padding: 1rem;
+  outline: none;
+
+}
+
+#form-contact .content form input[type="submit"]{
+  width: 160px;
+  background-color: #40739e;
+  color: white;
+  border : none;
+  transition: all 0.2s;
+  
+}
+
+#form-contact .content form input[type="submit"]:hover{
+  filter: brightness(.9);  
+}
+
+#form-contact .content form textarea{
+
+  width: 100%;
+  padding: 1rem;
+  font-family: 'DM Sans', sans-serif;
+  outline: none;
+}
+
+
+footer{
+
+  padding: 6rem 2rem;
+  background: #2F3640;
+  color: white;
+
+}
+
+
+footer .container .content .header{
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+footer .container .content .header img{
+  width: 30px;
+}
+
+footer .container .content {
+  display: grid;
+  gap: 2rem;
+  
+}
+
+.adress-item {
+  margin: 6rem 0;
+  display: grid;
+  gap: 1rem;
+}
+
+.adress-item h4{
+  font-size: 1.3rem;
+  border-left: 4px solid #40739E;
+  padding-left: 1rem;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.adress-item h4 img{
+  width: 120px;
+}
+
+.adress-item .item {
+  display: flex;
+  gap: 1rem;
+  font-size: 1.2rem;
+  
+}
+
+
+a.item{
+  cursor: pointer;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  
+}
+
+
+.py-socialmedia{
+  display: grid;
+  gap: 1rem;
+  font-size: 1.3rem
+}
+
+
+footer .logos{
+  width: 100%;
+  height:200px;
+ 
+  display: grid;
+  gap: 1rem;
+  grid-auto-flow: column;
+}
+
+footer .logos img{
+  width: 120px;
+}
+
+
+.footer-logo{
+  width:100px;
+  margin-top:6rem
+}
+
+
+
+
+
+
 @media (min-width: 900px) {
   .savia-wrapper {
     background-color: white;
@@ -757,6 +926,32 @@ nav.show div.icon-close {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
+  }
+
+
+
+  #form-contact .container{
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  #form-contact .content{
+    width: 600px;
+  
+  }
+
+
+  footer .container .content {
+    display: grid;
+    gap: 5rem;
+    grid-template-columns: 1fr 1fr;
+    
+  }
+
+
+  .py-adress,
+  .br-adress{
+    max-width: 400px;
   }
 }
 
