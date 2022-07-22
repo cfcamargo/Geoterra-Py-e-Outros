@@ -226,10 +226,10 @@ nav.show div.icon-close {
 
 #home {
   height: calc(100vh - var(--header-height));
-  background-image: url(/assets/images/calagem-banner.jpeg);
+  background-image: url(/assets/images/bannerHome.jpg);
   background-attachment: fixed;
   background-size: cover;
-  background-position: center;
+  background-position: bottom;
 }
 
 #home {
@@ -282,18 +282,23 @@ nav.show div.icon-close {
   margin: 0 auto;
 }
 
-.home-content .home-content-description button {
+.home-content .home-content-description a {
   width: 130px;
   height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 0.9rem;
   background-color: var(--base-color);
   color: white;
   border: none;
   border-radius: 5px;
-  margin: 0 auto;
+  
+
+  cursor: pointer;
 }
 
-.home-content button:hover {
+.home-content a:hover {
   transform: scale(1.1);
 }
 
@@ -474,14 +479,20 @@ nav.show div.icon-close {
 .savia-wrapper .savia-content a {
   padding: 1rem 2rem;
   background-color: #40739e;
-  color: white;
+  color: white ;
   display: inline-block;
   width: 180px;
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all .3s ease
 
   margin: 0 auto;
+}
+
+.savia-wrapper .savia-content a:hover {
+  transform: scale(1.01)
+  
 }
 
 .savia-wrapper .savia-content h3 {
@@ -616,9 +627,11 @@ nav.show div.icon-close {
 
 
 .eletronic-item .content a:hover,
-.station-item .content a:hover, a{
+.station-item .content a:hover{
 
   filter: brightness(.9);
+  transform : scale(1.01)
+
 
 
 }
